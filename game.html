@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Little game</title>
+  <style>
+    .text{
+      color: white;
+      font-family: arial;
+      font-weight: bold;
+    }
+    .button{
+      height:50px;
+      width: 50px;
+      border-radius: 25px;
+      background-color: rgb(49, 49, 49);
+      border:2px solid white;
+      color: white;
+    }
+    .b{
+      background-color: rgb(49, 49, 49);
+border:none;
+height:50px;
+      width: 50px;
+      border-radius: 25px;
+    }
+  </style>
+</head>
+<body style="background-color: rgb(37, 32, 32);">
+  <p class="text">Rock Paper Seisor</p>
+
+<br>
+<br>
+
+  <button class="b" onclick="
+  let num = Math.random();
+  let num2 = '';
+
+  if(num>=0&&num<1/3){
+    num2='Rock';
+  }
+  else if(num>=1/3&&num<2/3){
+    num2='Paper';
+  }
+  else if(num>=2/3&&num<1){
+    num2='Seasor';
+  }
+
+  let result='';
+
+  if(num2==='Rock'){
+    result='Tie';
+  }
+  else if(num2==='Paper'){
+    result='you loose';
+  }
+  else if(num2==='seasor'){
+    result='You win';
+  }
+alert(`You pick Rock,Computer choose${num2},so${result}BITCH`);
+  ">&#x1F44A;</button>
+  <button class="b" onclick="
+      let numm = Math.random();
+      let num22 = '';
+
+  if(numm>=0&&numm<1/3){
+    num22='Rock';
+  }
+  else if(numm>=1/3&&numm<2/3){
+    num22='Paper';
+  }
+  else if(numm>=2/3&&numm<1){
+    num22='Seasor';
+  }
+
+  let resultt='';
+
+  if(num22==='Rock'){
+    resultt='You win';
+  }
+  else if(num22==='Paper'){
+    resultt='TIE';
+  }
+  else if(num22==='seasor'){
+    resultt='You Loose';
+  }
+alert(`You pick Paper,Computer choose${num22},so${resultt}BITCH`);
+  ">&#128400;</button>
+  <button class="b" onclick="
+       let number = Math.random();
+  let num23 = '';
+
+  if(number>=0&&number<1/3){
+    num23='Rock';
+  }
+  else if(number>=1/3&&number<2/3){
+    num23='Paper';
+  }
+  else if(number>=2/3&&number<1){
+    num23='Seasor';
+  }
+
+  let f='';
+
+  if(num23==='Rock'){
+    f='You loose';
+  }
+  else if(num23==='Paper'){
+    f='you Win';
+  }
+  else if(num23==='seasor'){
+    f='Tie';
+  }
+alert(`You pick Seasor,Computer choose${num23},so${f}BITCH`);
+  ">&#9996;</button>
+
+</body>
+</html>
